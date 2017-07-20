@@ -1,4 +1,5 @@
 /* Resturaunt Stylsheet for entire website */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 header {
 margin: 0 auto;
@@ -16,5 +17,23 @@ width: 100%;
 border-top: 1px solid black;
 padding-top: 10px;
 padding-bottom: 10px;
+
+}
+#menuDiv{
+    background-color: tan;
+}
+#imageDiv{
+
+    background-color: tan;
+
+}
+#descriptionDiv{
+
+    background-color: tan;
+
+}
+#requiredField{
+
+    font-weight: bold;
 
 }
