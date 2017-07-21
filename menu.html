@@ -3,6 +3,16 @@
     <head>
         <title>Home Page</title>
         <link href="css/restaurantStyles.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
         <style>
             table{
                 word-wrap: break-word;
@@ -15,17 +25,15 @@
         </style>
     </head>
     <body>
-        <div>
-        <div style="padding-bottom:50px; ">
-            <h1><center>Stefanino's</center></h1>
-            <header>
-                <a href="index.html">Home</a> &nbsp &nbsp
-                <a href="menu.html">Menu</a> &nbsp &nbsp
-                <a href="contact-us.html">Contact Us</a>
-            </header>
-        </div>
+        <h1 style="font-family: 'Dancing Script', cursive"><center>Stefanino's</center></h1>
+        <ul class="nav nav-pills">
+                <li class="nav navbrand" style="font-family: 'Dancing Script', cursive"><a href="#">S</a></li>
+                <li><a href="index.html" class="glyphicon glyphicon-home"></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact-us.html">Contact Us</a><li>
+        </ul>
         <div id = "menuDiv">
-            <table>
+            <table class = "table table-responsive">
                 <tr>
                     <td>
                         <h3>Funghi and Pigfeet Sandwich</h3>
@@ -63,10 +71,10 @@
             </table>
         </div>
         <div>
-            <table id="beverageTable">
+            <table id="beverageTable" class = "table table-responsive">
                 <thead>
                     <th id="beverageHeading"><h3>Beverages</h3></th>
-                    <th>         </th>
+                    <th>                </th>
                 </thead>
                 <tbody>
                     <tr>
@@ -88,9 +96,7 @@
                 </tbody>
             </table>
         </div>
-                    
-
-        <div style="padding-top:50px;">
+        <div>
             <footer>
             <strong><center>8750 Rosa Fiume Road N.E. Kansas, Ohio 44785</center></strong><br/>
             <strong><center>880-754-8554</center></strong>

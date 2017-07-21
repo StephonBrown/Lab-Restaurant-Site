@@ -8,22 +8,83 @@
                 word-wrap: break-word;
             }
         </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width = device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js">
+                $('.carousel').carousel({
+                    interval: 3000
+                })
+                $('.carousel-control.left').click(function() {
+                    $('#frontCarousel').carousel('prev');
+                });
+
+                $('.carousel-control.right').click(function() {
+                    $('#frontCarousel').carousel('next');
+                });
+                    
+        </script>
+        <noscript> This site is best viewed with JavaScript enabled.</noscript>
     </head>
     <body>
-        <div>
-            <h1 style="font-family: 'Dancing Script', cursive"><center>Stefanino's</center></h1>
-            <header>
-                <a href="index.html">Home</a> &nbsp &nbsp
-                <a href="menu.html">Menu</a> &nbsp &nbsp
-                <a href="contact-us.html">Contact Us</a>
-            </header>
+        <h1 style="font-family: 'Dancing Script', cursive"><center>Stefanino's</center></h1>
+        <ul class="nav nav-pills">
+            <li class="nav navbrand" style="font-family: 'Dancing Script', cursive"><a href="#">S</a></li>
+                <li><a href="index.html" class="glyphicon glyphicon-home"></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact-us.html">Contact Us</a><li>
+        </ul>
+                                <!--Carousel-->
+        <div id="frontCarousel" class="carousel slide" data-ride="carousel" style="margin:auto">
+            <ol class="carousel-indicators">
+                <li data-target = "#frontCarousel" data-slide-to="0" class="active"></li>
+                <li data-target = "#frontCarousel" data-slide-to="1" ></li>
+                <li data-target = "#frontCarousel" data-slide-to="2"></li>
+            </ol>
+                                <!--Wrapper for carousel-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="jumbotron myJumbotron" style="margin:auto">
+                        <h1>New Location Opening!</h1>
+                        <p> Come visit our new location in Canton, Ohio. 321 Tusc. Ave. Canton, Ohio 44734</p>  
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="jumbotron myJumbotron" style="margin:auto">
+                        <h1>We're rolling out our seasonal menu!</h1>
+                        <p>Come taste our special options for this season.</p>  
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="jumbotron myJumbotron" style="margin:auto">
+                        <h1> Drink of the Month</h1>
+                        <p> The Drink of the Month is SG Special Brew.</p>  
+                    </div>
+                </div>
+            </div>
+                                <!--Controls of carousel-->
+                <a class="left carousel-control" href = "#frontCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href = "#frontCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
         </div>
-        <div id = "imageDiv">
+
+        <div id = "imageDiv" >
         <br/>
-        <img src= "Assets/gnocchi.jpg" alt ="Picture of Gnocchi" style="width:400px ; height:150px ;display: block; margin-left: auto; margin-right:auto"/>
+        <img src= "Assets/gnocchi.jpg" alt ="Picture of Gnocchi" style="width:400px ; height:300px ;display: block; margin-left: auto; margin-right:auto"/>
         </div>
         <div id = "descriptionDiv">
-            <center><table border="1px solid black" width = "400px;">
+            <center><table class = "table-responsive" border="1px solid black" width = "400px;">
                 <tr>
                     <td>
                         Buon Giorno!<br/><br/>

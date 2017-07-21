@@ -48,29 +48,32 @@ a:visited{
 a:hover{
 
     font-weight: bold;
+    color: blue;
 
 }
 a:active{
 
     text-decoration: none;
+    
 
 }
 
 #beverageHeading{
-    width: 100%;
+    width: 50%;
     text-decoration: underline;
     text-align: left;
     
 }
 #drinkName{
     text-align: left;
-    width: 50%;
 
 }
 #drinkPrice{
     text-align: right;
-    width: 50%;
 }
 #beverageTable{
     background-color: tan
+}
+.myJumbotron{
+    background-color: tan!important;
 }
